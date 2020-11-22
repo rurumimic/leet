@@ -1,3 +1,5 @@
+-- sum 함수가 없으면, 2월이나 3월의 revenue가 null로 출력된다.
+
 select
   id,
   sum(if(month = 'JAN', revenue, null)) as JAN_Revenue,
